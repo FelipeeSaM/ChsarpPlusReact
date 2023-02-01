@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CsharpPlusReact.Configuration {
     public class Context : DbContext {
 
-        public Context(DbContextOptions<Context> Options) : base(Options) {
+        public Context(DbContextOptions<Context> options) : base(options) {
             Database.EnsureCreated();
         }
 

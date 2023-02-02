@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { FetchProducts } from './components/FetchProduct';
+import { AddProduct } from './components/AddProduct';
 
 import './custom.css'
 
@@ -18,6 +19,8 @@ export default class App extends Component {
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/fetch-product' component={FetchProducts} />
+        <Route path='/add-product' component={AddProduct} />
+        <Route path='/product/edit/:id' component={AddProduct} />
       </Layout>
     );
   }
